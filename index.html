@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+
+
+	<div class="container">
+		
+
+		<ul class="accordion">
+
+
+			<li>
+				<div class="accordion-title" data-target="accordion-1">
+					accordion - 1
+				</div>
+				<div class="accordion-description" id="accordion-1">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+
+			<li>
+				<div class="accordion-title" data-target="accordion-2">
+					accordion - 2
+				</div>
+				<div class="accordion-description" id="accordion-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+
+			<li>
+				<div class="accordion-title" data-target="accordion-3">
+					accordion - 3
+				</div>
+				<div class="accordion-description" id="accordion-3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+
+			<li>
+				<div class="accordion-title" data-target="accordion-4">
+					accordion - 4
+				</div>
+				<div class="accordion-description" id="accordion-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+
+			<li>
+				<div class="accordion-title" data-target="accordion-5">
+					accordion - 5
+				</div>
+				<div class="accordion-description" id="accordion-5">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+
+			<li>
+				<div class="accordion-title" data-target="accordion-6">
+					accordion - 6
+				</div>
+				<div class="accordion-description" id="accordion-6">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quasi unde, asperiores quas molestias maxime aut ab voluptates laudantium.
+				</div>
+			</li>
+			
+
+		</ul>
+
+
+
+		<p style="text-align: center;">&copy; 2020 <a href="">insidethediv.com</a></p>
+
+
+	</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+
+
+<script>
+	$(document).ready(function(){
+		$(".accordion-title").click(function(){
+			var accordion = $(this).data('target');
+
+			$('.accordion-title').removeClass('active-accordion');
+			$(this).addClass('active-accordion');
+
+			$(".accordion-description").slideUp();
+			$("#"+accordion).slideDown();
+
+		})
+	})
+</script>
+</html>

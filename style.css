@@ -1,0 +1,36 @@
+.container{
+	width: 500px;
+	height: 800px;
+	border: 2px solid black;
+	margin: 50px auto;
+}
+
+
+.accordion{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	padding: 30px;
+}
+.accordion li{
+	border: 1px solid rgba(0,0,0,0.4);
+}
+.accordion li .accordion-title{
+	 display: block;
+	 background: black;
+	 color:#fff;
+	 font-size: 20px;
+	 padding: 10px 5px;
+	 border-bottom: 1px solid #f1f1f1;
+	 cursor: pointer;
+
+}
+
+.accordion li .accordion-description{
+	display: none;
+	padding: 15px 5px;
+}
+
+.accordion li .active-accordion{
+	background:rgba(0,0,0,0.6);
+}
